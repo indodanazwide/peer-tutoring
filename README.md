@@ -39,12 +39,12 @@ Peer Tutoring SaaS is a **Software-as-a-Service (SaaS) platform** designed to co
 ### Clone the Repository
 ```sh
 git clone https://github.com/indodanazwide/peer-tutoring.git
-cd peer-tutoring-saas
+cd peer-tutoring
 ```
 
 ### Backend Setup
 ```sh
-cd backend
+cd server
 python3 -m venv venv
 . venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -53,7 +53,7 @@ flask run
 
 ### Frontend Setup
 ```sh
-cd frontend
+cd client
 npm install
 npm run dev
 ```
