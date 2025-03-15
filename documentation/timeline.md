@@ -47,5 +47,10 @@
     ```
 
 - Commit my initial setup
+    ```sh
+    git add .
+    git commit -m "Initial project structure setup"
+    git push origin main
+    ```
     ---
     
