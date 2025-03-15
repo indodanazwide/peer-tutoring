@@ -1,0 +1,60 @@
+# ==========================
+# React (Frontend)
+# ==========================
+node_modules/
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+build/
+dist/
+.cache/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================
+# Flask (Backend)
+# ==========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.db
+*.sqlite3
+.venv/
+venv/
+env/
+.env
+.flaskenv
+instance/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ==========================
+# MySQL (Database)
+# ==========================
+*.sql
+*.dump
+*.bak
+*.log
+
+# ==========================
+# IDE/Editor Specific
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# ==========================
+# System Files
+# ==========================
+.DS_Store
+Thumbs.db
