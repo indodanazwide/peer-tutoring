@@ -26,7 +26,8 @@
     ├── LICENSE
     ├── README.md
     └── server
-        └── venv
+        ├── venv
+        └── app.py
     ```
 
 - Set up `.gitignore`, `README.md`, and `LICENSE`
