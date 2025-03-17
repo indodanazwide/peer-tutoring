@@ -2,12 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/tute.png" />
+    <link href="/src/main.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Tute Me</title>
+    <style>
+      .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .loader .circle-container {
+        position: relative;
+        width: 60px; 
+        height: 60px; 
+      }
+
+      .loader .circle {
+        --color: #3498db; 
+        --dim: 1rem; 
+        width: var(--dim);
+        height: var(--dim);
+        background-color: var(--color);
+        border-radius: 50%;
+        position: absolute;
+        animation: spinAndScale 1.5s infinite ease-in-out;
+      }
+
+      .loader .circle:nth-child(1) {
+        top: 0;
+        left: 0;
+        transform-origin: bottom right;
+      }
+
+      .loader .circle:nth-child(2) {
+        top: 0;
+        right: 0;
+        transform-origin: bottom left;
+      }
+
+      .loader .circle:nth-child(3) {
+        bottom: 0;
+        left: 0;
+        transform-origin: top right;
+      }
+
+      .loader .circle:nth-child(4) {
+        bottom: 0;
+        right: 0;
+        transform-origin: top left;
+      }
+
+      @keyframes spinAndScale {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        25% {
+          transform: scale(1.3) rotate(90deg);
+        }
+        50% {
+          transform: scale(1) rotate(180deg);
+        }
+        75% {
+          transform: scale(0.8) rotate(270deg);
+        }
+        100% {
+          transform: scale(1) rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
+    <div id="loader" class="loader">
+      <div class="circle-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+
     <div id="root"></div>
+
+    <script>
+      function showLoader() {
+        document.getElementById('loader').style.display = 'flex';
+      }
+
+      function hideLoader() {
+        document.getElementById('loader').style.display = 'none';
+      }
+
+      showLoader();
+      setTimeout(hideLoader, 3000); 
+    </script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
