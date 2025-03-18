@@ -1,0 +1,102 @@
+// Colors
+$blue: #4F46E5;
+$blue-hover: #443dc4;
+$ebony: #1D1F0E;
+$white: #F2EEF7;
+
+// Typography
+$poppins: "Poppins", Arial, Helvetica, sans-serif;
+$h1-size: 2.25em;
+$h2-size: 1.25em;
+$h3-size: 1.05em;
+$p-size: .95em;
+$font-bold: 800;
+$font-semibold: 500;
+$font-regular: 400;
+
+.pd-inline {
+    padding-inline: 4rem;
+}
+
+.pd-block {
+    padding-block: 6rem;
+}
+
+.icon {
+    width: 2rem;
+    transition: color 0.2s, background-color 0.2s;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 1.5rem;
+    font-size: 1rem; 
+    font-weight: 500; 
+    background-color: $blue; 
+    color: $white;
+    border-radius: 0.5rem; 
+    transition: color 0.2s, background-color 0.2s;
+
+    &:hover {
+        background-color: $blue-hover;
+    }
+
+    .dark & {
+        color: #9ca3af;
+        background-color: #1f2937; 
+
+        &:hover {
+        color: #ffffff;
+        background-color: #374151; 
+        }
+    }
+
+
+    span {
+        width: 100%; 
+    }
+
+    .arrow-icon {
+        width: 1rem;
+        height: 1rem; 
+        margin-left: 0.5rem; 
+    }
+
+}
+
+.card {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 0.5rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    font-size: $h1-size;
+    font-weight: $font-bold;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: $h2-size;
+    font-weight: $font-bold;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: $h3-size; 
+    font-weight: $font-bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: $p-size;
+    font-weight: $font-regular;
+    margin-bottom: 2rem; 
+}

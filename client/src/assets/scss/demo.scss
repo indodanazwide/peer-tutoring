@@ -1,0 +1,119 @@
+.home {
+    display: none;
+    #hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        #hero-content {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto; 
+            text-align: center; 
+        
+            h1 {
+                font-size: 2.25rem;
+                line-height: 2.5rem; 
+                margin-bottom: 1rem;
+                font-weight: 800;
+            }
+        
+            p {
+                font-size: 1.125rem;
+                line-height: 1.75rem; 
+                margin-bottom: 2rem; 
+                max-width: 56rem; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+        }
+    }
+
+    #services {
+        padding: 4rem 1rem;
+        text-align: center;
+        overflow: hidden;
+      
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+      
+        .service-group {
+            padding: 1.5rem;
+            border-radius: 0.5rem; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            text-align: left;
+            animation: slide 20s linear infinite;
+
+            div {
+                flex: 0 0 100%; 
+                padding: 1.5rem;
+                text-align: left;
+            }
+        }
+    }
+
+    #testimonials {
+        padding: 4rem 1rem;
+        text-align: center;
+        background-color: #f9fafb;
+      
+    
+      
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+      
+        .testimonial-card {
+            padding: 1.5rem;
+            border-radius: 0.5rem; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // shadow-lg
+            text-align: left;
+        
+            
+        
+            .author {
+                font-weight: 600;
+                font-size: 1.125rem; 
+            }
+        }
+    }
+
+    #cta {
+        padding: 4rem 1rem; 
+        text-align: center;
+        background-color: #1a56db;
+        color: #ffffff; 
+      
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem; 
+            font-size: 1rem; 
+            font-weight: 500; 
+            border-radius: 0.5rem;
+            background-color: #ffffff; 
+            color: #1a56db; 
+            transition: background-color 0.2s, color 0.2s;
+        
+            &:hover {
+                background-color: #f3f4f6; 
+                color: #1e429f;
+            }
+        }
+    }
+}
+
+footer {
+    display: none;
+}

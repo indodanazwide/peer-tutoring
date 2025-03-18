@@ -1,9 +1,42 @@
 @use 'index' as *;
 
-body {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
-main {
-    min-height: 200vh;
+body {
+    background-color: $white;
+    font-family: $poppins;
+}
+
+header {
+    background-color: $white;
+}
+
+.home {
+    #hero {
+        background-image: url('../images/hero.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        background-size: 25%;
+    }
+
+    #services {
+        text-align: center;
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem; 
+        }
+
+        .service-group {
+            div {
+                flex: 0 0 100%; 
+                padding: .5rem;
+                text-align: left;
+            }
+        }
+    }
 }
